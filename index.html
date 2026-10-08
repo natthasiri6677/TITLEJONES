@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <!-- ส่วน head: ข้อมูลของเว็บ ไม่แสดงบนหน้าจอ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Bowl | อาหารคลีน</title>
+  <!-- เชื่อมไฟล์ CSS เข้ากับ HTML -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1) header: ส่วนหัวเว็บ มีโลโก้และเมนูนำทาง -->
+  <header class="site-header">
+    <a href="#home" class="logo">Green Bowl</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#menu">เมนู</a></li>
+        <li><a href="#why">ทำไมต้องคลีน</a></li>
+        <li><a href="#contact">สั่งอาหาร</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2) hero: ส่วนต้อนรับ ข้อความหลักของเว็บ -->
+    <section id="home" class="hero">
+      <h1>กินสะอาด<br>ทุกมื้อ ทำสดทุกวัน</h1>
+      <p>อาหารคลีนไม่ใช้ผงชูรส ไม่ทอดน้ำมันซ้ำ บอกแคลอรี่ทุกเมนู</p>
+      <a href="#menu" class="btn">ดูเมนูทั้งหมด</a>
+    </section>
+
+    <!-- 3) menu: รายการอาหาร แต่ละอย่างอยู่ใน article -->
+    <section id="menu" class="menu">
+      <h2>เมนูแนะนำ</h2>
+      <div class="card-grid">
+
+        <article class="card">
+          <div class="card-icon">🥗</div>
+          <h3>สลัดอกไก่ย่าง</h3>
+          <p>ผักสลัดรวม อกไก่ย่าง ไข่ต้ม น้ำสลัดงาญี่ปุ่น</p>
+          <span class="kcal">320 kcal</span>
+          <span class="price">89 บาท</span>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🍚</div>
+          <h3>ข้าวกล้องปลาแซลมอน</h3>
+          <p>ข้าวกล้องหอมมะลิ แซลมอนย่าง บรอกโคลีนึ่ง</p>
+          <span class="kcal">480 kcal</span>
+          <span class="price">149 บาท</span>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🥑</div>
+          <h3>โยเกิร์ตโบลว์</h3>
+          <p>กรีกโยเกิร์ต กล้วย อะโวคาโด กราโนล่า</p>
+          <span class="kcal">260 kcal</span>
+          <span class="price">79 บาท</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 4) why: ข้อดีของอาหารคลีน -->
+    <section id="why" class="why">
+      <h2>ทำไมต้องกินคลีน</h2>
+      <ul class="why-list">
+        <li><strong>ควบคุมน้ำหนักได้</strong> เพราะรู้แคลอรี่ของทุกมื้อ</li>
+        <li><strong>ร่างกายได้สารอาหารครบ</strong> ทั้งโปรตีน ไฟเบอร์ และวิตามิน</li>
+        <li><strong>วัตถุดิบสด</strong> ซื้อใหม่ทุกเช้า ไม่ใช้อาหารแช่แข็ง</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- 5) footer: ส่วนท้าย ข้อมูลติดต่อ -->
+  <footer id="contact" class="site-footer">
+    <h2>สั่งอาหารได้เลย</h2>
+    <p>LINE: @greenbowl | โทร 08x-xxx-xxxx</p>
+    <p class="copyright">© 2026 Green Bowl</p>
+  </footer>
+
+</body>
+</html>
